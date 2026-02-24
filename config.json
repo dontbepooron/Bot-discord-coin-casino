@@ -1,0 +1,65 @@
+{
+  "prefix": "+",
+  "buyerId": "1013411910101762078",
+  "namecoin": "NozCoins",
+  "servername": "dvm #🇵🇸",
+  "currency": {
+    "name": "NozCoins",
+    "coinEmoji": "<:Coins:1453088950481850419>",
+    "xpFlaskEmoji": "<:8983xpbottle:1475490363174162575>"
+  },
+  "statusEmoji": {
+    "success": "<:fleche:1453471218245177456>",
+    "error": "<:croix:1453471219474104320>",
+    "positive": "<:fleche:1453471218245177456>",
+    "negative": "<:croix:1453471219474104320>",
+    "warning": "<:emoji_25:1453088915442499616>"
+  },
+  "cooldowns": {
+    "globalCommandMs": 1500,
+    "collectMs": 900000,
+    "dailyMs": 86400000,
+    "giftMs": 900000,
+    "volMs": 180000,
+    "jackpotMs": 60000,
+    "rouletteMs": 30000,
+    "blackjackMs": 30000,
+    "pfcMs": 30000,
+    "slotsMs": 30000,
+    "coinflipMs": 20000,
+    "hiloMs": 25000,
+    "crapsMs": 25000
+  },
+  "limits": {
+    "minGameBet": 100,
+    "maxDonation": 250000,
+    "maxVolCoins": 60000,
+    "maxVolXp": 100,
+    "warnThreshold": 3,
+    "autoTempblMs": 259200000
+  },
+  "gamePots": {
+    "bingoStart": 1000,
+    "jackpotStart": 5000
+  },
+  "groups": {
+    "maxGroups": 9,
+    "maxRolesPerGroup": 3
+  },
+  "security": {
+    "maxCommandChars": 320,
+    "commandBurstWindowMs": 5000,
+    "commandBurstMax": 7,
+    "commandBurstBlockMs": 12000,
+    "interactionBurstWindowMs": 5000,
+    "interactionBurstMax": 12,
+    "interactionBurstBlockMs": 10000
+  },
+  "embedColor": {
+    "default": "#1f8bff",
+    "success": "#2ecc71",
+    "error": "#e74c3c",
+    "warning": "#f39c12",
+    "info": "#3498db"
+  }
+}
