@@ -1,3 +1,5 @@
+// je m'était tromper à la base sur le nom de la commande mais je l'ai garder ptdr ct drole
+
 import {
   ActionRowBuilder,
   ButtonBuilder,
