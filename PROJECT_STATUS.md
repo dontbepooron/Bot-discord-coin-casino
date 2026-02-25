@@ -9,5 +9,6 @@ Message important:
   - **clans**,
   - **pillages avancés**, etc..
   ne sont **pas disponibles en version complète** dans cette V1 mais peut être que je les ajouterai plus tard si j'ai pas trop la flemme xD
+- Si vous voulez une V2 rejoigner le support et proposer des suggestion de nouveauté : https://discord.gg/etQByzdvx
 
 
