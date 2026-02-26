@@ -43,7 +43,7 @@ export default defineCommand({
   aliases: ['machine', 'slot'],
   profileRequired: true,
   blockable: true,
-  cooldownMs: (client) => client.config?.cooldowns?.slotsMs || 30000,
+  cooldownMs: (client) => client.config?.cooldowns?.slotsMs || 5000,
   async execute({ client, message, args, embed, status }) {
     const minBet = resolveMinGameBet(client.config)
     const bet = parseIntInRange(args[0], minBet, Number.MAX_SAFE_INTEGER)

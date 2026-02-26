@@ -30,7 +30,7 @@ export default defineCommand({
   aliases: ['cf', 'pileface'],
   profileRequired: true,
   blockable: true,
-  cooldownMs: (client) => client.config?.cooldowns?.coinflipMs || 20000,
+  cooldownMs: (client) => client.config?.cooldowns?.coinflipMs || 5000,
   async execute({ client, message, args, embed, status }) {
     const minBet = resolveMinGameBet(client.config)
     const bet = parseIntInRange(args[0], minBet, Number.MAX_SAFE_INTEGER)

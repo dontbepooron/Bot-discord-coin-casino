@@ -148,7 +148,14 @@ export async function applyCreditedActivity(client) {
   const picked = pickDifferentVariant(variants, runtime.creditStatusIndex ?? -1)
   runtime.creditStatusIndex = picked.index
 
-  await client.user.setActivity(picked.text, { type: ActivityType.Playing }).catch(() => null)
+  try {
+    const maybePromise = client.user.setActivity(picked.text, { type: ActivityType.Playing })
+    if (maybePromise && typeof maybePromise.then === 'function') {
+      await maybePromise
+    }
+  } catch {
+    // Ignore activity failures to avoid crashing startup.
+  }
   return picked.text
 }
 

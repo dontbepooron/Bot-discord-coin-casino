@@ -4,7 +4,7 @@ import { startGainVoiceScheduler } from '../utils/gainSystem.js'
 import { startCreditStatusRotation } from '../utils/creditBranding.js'
 
 export default {
-  name: 'ready',
+  name: 'clientReady',
   once: true,
   async execute(client) {
     logger.info(`Connecté en tant que ${client.user.tag}`)

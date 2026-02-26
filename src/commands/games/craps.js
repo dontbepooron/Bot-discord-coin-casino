@@ -34,7 +34,7 @@ export default defineCommand({
   aliases: ['des'],
   profileRequired: true,
   blockable: true,
-  cooldownMs: (client) => client.config?.cooldowns?.crapsMs || 25000,
+  cooldownMs: (client) => client.config?.cooldowns?.crapsMs || 5000,
   async execute({ client, message, args, embed, status }) {
     const minBet = resolveMinGameBet(client.config)
     const bet = parseIntInRange(args[0], minBet, Number.MAX_SAFE_INTEGER)
